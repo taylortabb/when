@@ -24,7 +24,7 @@
       document.title = "See you in" + days + " days " + hours + " hrs " + minutes + " min " + seconds + " sec ";
       var counter = "See you in" + days + " days " + hours + " hrs " + minutes + " min " + seconds + " sec ";
 
-      document.querySelector('meta[property="og:title"]').setAttribute(counter, _desc);
+      document.querySelector('meta[property="og:title"]').setAttribute("content", counter);
 
 
       if (distance < 0) {
