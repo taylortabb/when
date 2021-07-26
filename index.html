@@ -1,6 +1,10 @@
 <HTML>
 <HEAD>
 
+<meta property="og:image" content="https://i.imgur.com/8HQsDJW.png"/>
+
+<meta property="og:title" content="..." />
+
 <script>
 
       var countDownDate = new Date("Aug 5, 2021 9:30:00").getTime();
@@ -18,6 +22,9 @@
         
       // Output the result in an element with id="move_on_timer"
       document.title = "See you in" + days + " days " + hours + " hrs " + minutes + " min " + seconds + " sec ";
+      var counter = "See you in" + days + " days " + hours + " hrs " + minutes + " min " + seconds + " sec ";
+
+      document.querySelector('meta[property="og:title"]').setAttribute(counter, _desc);
 
 
       if (distance < 0) {
